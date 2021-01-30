@@ -22,12 +22,13 @@ body {
   padding-bottom: 500px;
   max-width: 800px;
   scroll-behavior: smooth;
-
 }
 
 .full-page {
   width: 100vw;
   height: 100vh;
+  position: sticky;
+  top: 0;
 }
 /*page 1*/
 
