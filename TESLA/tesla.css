@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    src: url(./fonts/Gotham/Gotham\ Medium.otf);
+    font-family: medium;   
+}
+@font-face{
+    src: url(./fonts//Book/Gotham\ Book\ Regular.otf);
+    font-family: book;
+
+}
+@font-face{
+    src: url(./fonts/FontsFree-Net-Gotham-Light.ttf);
+    font-family: light;
+}
+body{
+    overflow: auto;
+    padding-top: 4px;
+    font-family: medium;
+    padding-bottom: 500px;
+    max-width: 800px;
+
+}
+
+.full-page{
+    width: 100vw;
+    height: 100vh;
+}
+/*page 1*/
+
+#page1{
+    background: url(./img_tesla/red-car-page1.jpeg);                            
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center; 
+    display: grid;
+    grid-template-rows: 1fr 8fr 5fr;
+    }
+
+.nav-bar {
+    overflow: hidden;
+    /* background-color: #333; */
+    top: 0;
+    width: 100%;
+    line-height: 0.5;
+    font-weight: bold;
+
+  }
+  
+  .nav-bar a {
+    /* float: left; 
+    display: block; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 9px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .logo-t{
+      width: 105px;
+  }
+  .lines{
+      width: 40px;
+      /* border: springgreen solid; */
+  }
+.models{
+    padding-left: 110px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+#nav-bar-right{
+    padding-right: 20px;
+}
+
+a:hover{color: #333;}
+
+
+#model3{
+    color: #ffffff; 
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+
+/*infooo*/
+.speed{
+    border: solid pink;
+    width: 50px;
+   
+}
+.boundary-line {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.info-part{
+    color: white;
+    max-width: 600px;
+    margin: 5% auto auto 35%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    width: 1700px;
+    font-size: 20px;
+    
+}
+.info-part p{
+    font-size: 12px;
+}
+.box{
+font-size: 28px;
+
+}
+
+#info-of-3 span{
+    font-size: 24px;
+}
+
+.btn-page1 button{
+border: solid white 3px;
+background: transparent;
+color: #fff;
+font-weight: bold;
+margin-top: 3px;
+margin-left: 40px;
+padding: 10px 35px;
+border-radius: 20px;}
+
+.btn-page1 button:hover{
+    background-color: #fff;
+    color: black;
+    transition: all 0.8s;
+
+}
+
+
+
+
+/* page2 */
+
+#page2{
+    display: grid;
+    grid-template-columns: 22% 78%;
+}
+.side-info{
+    background-color: #fff;
+}
+
+.black-logo{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.safety-p{
+    padding: 20px 45px;
+    line-height: 1.4;
+    color: #171a20;
+}
+.safety-p p{
+    font-family: book;
+    color: #393c41;
+    padding-top: 20px;
+}
+.safety-p h4{
+    font-family: light;
+    font-weight: lighter;
+    font-size: 19px;
+}
+.safety-p h3{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+.star-box{
+    background-color: #eeeeee;
+    max-width: 320px;
+    height: 300px;
+    padding: 40px 30px;
+    margin: 30px 40px;
+    border-radius: 20px;
+}
+
+.star-box h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 28px;
+    overflow: auto;
+    color: #171a20;
+}
+.left-text{
+    float: left;
+}
+.head-in-box{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #393c41;
+}
+
+
+.mark{
+    font-family: book;
+    font-size: 8px;
+    line-height: 8px;
+    color: #393c41;
+    padding-bottom: 8px;
+}
+
+.right-star{
+    float: right;
+    line-height: 35px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 70px;
+}
+.buttons p{
+    font-family: book;
+    font-size: 12px;
+    margin-top: 15px;
+    
+}
+.btn-plus button{
+    background-color: transparent;
+    border-radius: 100%;
+    border: solid 3px black ;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 40px; 
+    width: 45px;
+}
+.btn-plus button:hover, .btn-page2 button:hover{
+    background-color: black;
+    color: #fff;
+    transition: all 0.8s;
+
+}
+
+.btn-page2 button{
+    border: solid black 3px;
+    margin-right: 30px;
+    background: transparent;
+    font-family: medium;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.side-img{
+    background-image: url(./img_tesla/teyy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
