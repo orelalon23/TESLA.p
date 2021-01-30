@@ -1,269 +1,433 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-@font-face{
-    src: url(./fonts/medium/Gotham\ Medium.otf);
-    font-family: medium;   
+@font-face {
+  src: url(./fonts/medium/Gotham\ Medium.otf);
+  font-family: medium;
 }
-@font-face{
-    src: url(./fonts/Book/Gotham\ Book\ Regular.otf);
-    font-family: book;
+@font-face {
+  src: url(./fonts/Book/Gotham\ Book\ Regular.otf);
+  font-family: book;
+}
+@font-face {
+  src: url(./fonts/Light/Regular/Gotham\ Light\ Regular.otf);
+  font-family: light;
+}
+body {
+  overflow: auto;
+  padding-top: 4px;
+  font-family: medium;
+  padding-bottom: 500px;
+  max-width: 800px;
+  scroll-behavior: smooth;
 
 }
-@font-face{
-    src: url(./fonts/Light/Regular/Gotham\ Light\ Regular.otf);
-    font-family: light;
-}
-body{
-    overflow: auto;
-    padding-top: 4px;
-    font-family: medium;
-    padding-bottom: 500px;
-    max-width: 800px;
 
-}
-
-.full-page{
-    width: 100vw;
-    height: 100vh;
+.full-page {
+  width: 100vw;
+  height: 100vh;
 }
 /*page 1*/
 
-#page1{
-    background: url(./img_tesla/red-car-page1.jpeg);                            
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    background-position: center; 
-    display: grid;
-    grid-template-rows: 1fr 8fr 5fr;
-    }
+#page1 {
+  background: url(./img_tesla/red-car-page1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr 8fr 5fr;
+}
 
 .nav-bar {
-    overflow: hidden;
-    /* background-color: #333; */
-    top: 0;
-    width: 100%;
-    line-height: 0.5;
-    font-weight: bold;
+  overflow: hidden;
+  /* background-color: #333; */
+  top: 0;
+  width: 100%;
+  line-height: 0.5;
+}
 
-  }
-  
-  .nav-bar a {
-    /* float: left; 
+.nav-bar a {
+  /* float: left; 
     display: block; */
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 9px;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  .logo-t{
-      width: 105px;
-  }
-  .lines{
-      width: 40px;
-      /* border: springgreen solid; */
-  }
-.models{
-    padding-left: 110px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 9px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.logo-t {
+  width: 105px;
+}
+.lines {
+  width: 40px;
+  /* border: springgreen solid; */
+}
+.models {
+  padding-left: 110px;
 }
 
-.nav-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
 }
-#nav-bar-right{
-    padding-right: 20px;
-}
-
-a:hover{color: #333;}
-
-
-#model3{
-    color: #ffffff; 
-    text-align: center;
-    padding-top: 15px;
-    font-size: 40px;
-    font-weight: lighter;
+#nav-bar-right {
+  padding-right: 20px;
 }
 
+a:hover {
+  color: #333;
+}
+
+#model3 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 40px;
+  font-weight: lighter;
+}
 
 /*infooo*/
-.speed{
-    border: solid pink;
-    width: 50px;
-   
+.speed {
+  border: solid pink;
+  width: 50px;
 }
 .boundary-line {
-    font-size: 40px;
-    font-weight: lighter;
+  font-size: 40px;
+  font-weight: lighter;
 }
 
-.info-part{
-    color: white;
-    max-width: 600px;
-    margin: 5% auto auto 35%;
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    width: 1700px;
-    font-size: 20px;
-    
-}
-.info-part p{
-    font-size: 12px;
-}
-.box{
-font-size: 28px;
-
+.info-part {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  font-size: 20px;
 }
 
-#info-of-3 span{
-    font-size: 24px;
+#info-page1 {
+  max-width: 600px;
+  margin: 5% auto auto 35%;
+}
+.info-part p {
+  font-size: 12px;
+}
+.box {
+  font-size: 28px;
 }
 
-.btn-page1 button{
-border: solid white 3px;
-background: transparent;
-color: #fff;
-font-weight: bold;
-margin-top: 3px;
-margin-left: 40px;
-padding: 10px 35px;
-border-radius: 20px;}
-
-.btn-page1 button:hover{
-    background-color: #fff;
-    color: black;
-    transition: all 0.8s;
-
+#info-page1 span {
+  font-size: 24px;
+}
+.smalltext {
+  font-family: book;
+}
+.btn-page1 button {
+  border: solid white 3px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-left: 40px;
+  padding: 10px 35px;
+  border-radius: 20px;
 }
 
-
-
+.btn-page1 button:hover {
+  background-color: #fff;
+  color: black;
+  transition: all 0.8s;
+}
 
 /* page2 */
 
-#page2{
-    display: grid;
-    grid-template-columns: 22% 78%;
+#page2 {
+  display: grid;
+  grid-template-columns: 22% 78%;
 }
-.side-info{
-    background-color: #fff;
-}
-
-.black-logo{
-    padding-top: 10px;
-    padding-left: 10px;
+.side-info {
+  background-color: #fff;
 }
 
-.safety-p{
-    padding: 20px 45px;
-    line-height: 1.4;
-    color: #171a20;
-}
-.safety-p p{
-    font-family: book;
-    color: #393c41;
-    padding-top: 20px;
-}
-.safety-p h4{
-    font-family: light;
-    font-weight: lighter;
-    font-size: 19px;
-}
-.safety-p h3{
-    font-size: 30px;
-    font-weight: lighter;
+.black-logo {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
-
-.star-box{
-    background-color: #eeeeee;
-    max-width: 320px;
-    height: 300px;
-    padding: 40px 30px;
-    margin: 30px 40px;
-    border-radius: 20px;
+.safety-p {
+  padding: 20px 45px;
+  line-height: 1.4;
+  color: #171a20;
+}
+.safety-p p {
+  font-family: book;
+  color: #393c41;
+  padding-top: 20px;
+}
+.safety-p h4 {
+  font-family: light;
+  font-weight: lighter;
+  font-size: 19px;
+}
+.safety-p h3 {
+  font-size: 30px;
+  font-weight: lighter;
 }
 
-.star-box h4{
-    text-align: center;
-    font-size: 20px;
-    font-weight: lighter;
-    line-height: 28px;
-    overflow: auto;
-    color: #171a20;
-}
-.left-text{
-    float: left;
-}
-.head-in-box{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    color: #393c41;
+.star-box {
+  background-color: #eeeeee;
+  max-width: 320px;
+  height: 300px;
+  padding: 40px 30px;
+  margin: 30px 40px;
+  border-radius: 20px;
 }
 
-
-.mark{
-    font-family: book;
-    font-size: 8px;
-    line-height: 8px;
-    color: #393c41;
-    padding-bottom: 8px;
+.star-box h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 28px;
+  overflow: auto;
+  color: #171a20;
+}
+.left-text {
+  float: left;
+}
+.head-in-box {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #393c41;
 }
 
-.right-star{
-    float: right;
-    line-height: 35px;
+.mark {
+  font-family: book;
+  font-size: 8px;
+  line-height: 8px;
+  color: #393c41;
+  padding-bottom: 8px;
 }
 
-.buttons{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 70px;
-}
-.buttons p{
-    font-family: book;
-    font-size: 12px;
-    margin-top: 15px;
-    
-}
-.btn-plus button{
-    background-color: transparent;
-    border-radius: 100%;
-    border: solid 3px black ;
-    font-weight: bolder;
-    font-size: 20px;
-    padding: 8px;
-    margin-left: 40px; 
-    width: 45px;
-}
-.btn-plus button:hover, .btn-page2 button:hover{
-    background-color: black;
-    color: #fff;
-    transition: all 0.8s;
-
+.right-star {
+  float: right;
+  line-height: 35px;
 }
 
-.btn-page2 button{
-    border: solid black 3px;
-    margin-right: 30px;
-    background: transparent;
-    font-family: medium;
-    padding: 10px 30px;
-    border-radius: 20px;
+.buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 70px;
+}
+.buttons p {
+  font-family: book;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.btn-plus button {
+  background-color: transparent;
+  border-radius: 100%;
+  border: solid 3px black;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 8px;
+  margin-left: 40px;
+  width: 45px;
+}
+.btn-plus button:hover,
+.btn-page2 button:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.8s;
 }
 
-.side-img{
-    background-image: url(./img_tesla/teyy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.btn-page2 button {
+  border: solid black 3px;
+  margin-right: 30px;
+  background: transparent;
+  font-family: medium;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
 
+.side-img {
+  background-image: url(./img_tesla/teyy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* page3 */
+
+#page3,
+#page4 {
+  background-color: pink;
+  display: grid;
+  grid-template-rows: 65% 35%;
+}
+.up-img-page3 {
+  background-image: url(./img_tesla/red-car-page3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#info-page3,
+#info-page4 {
+  max-width: 880px;
+  margin: 18% auto auto 25%;
+}
+
+.down-info {
+  background-color: #ffffff;
+}
+.oreltest {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  margin-left: 25%;
+}
+
+.left-info-page3 h3,
+.left-info-page4 h3 {
+  font-family: light;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+.left-info-page3 h1,
+.left-info-page4 h1 {
+  font-family: medium;
+  font-weight: lighter;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.btn-page3 button,
+.btn-page4 button {
+  border: solid black 3px;
+  margin-right: 30px;
+  background: transparent;
+  font-family: medium;
+  padding: 8px 30px;
+  border-radius: 20px;
+  font-weight: lighter;
+}
+#buttons-page3,
+#buttons-page4 {
+  margin-top: 15px;
+  max-width: 360px;
+}
+
+#plus-btn-page3 button {
+  margin-left: 0;
+}
+.right-info-page3,
+.right-info-page4 {
+  font-family: book;
+  font-size: 15px;
+  line-height: 21px;
+  padding-top: 38px;
+  margin-right: 100px;
+}
+.up-img-page4 {
+  background-image: url(./img_tesla/blue-car-page4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sun-logo {
+  width: 40px;
+  margin-top: -30px;
+}
+/* page5 */
+
+#page5 {
+  display: grid;
+  grid-template-columns: 78% 22%;
+}
+.side-info {
+  background-color: #fff;
+}
+
+.black-logo {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.safety-p {
+  padding: 20px 45px;
+  line-height: 1.4;
+  color: #171a20;
+}
+.safety-p p {
+  font-family: book;
+  color: #393c41;
+  padding-top: 20px;
+}
+.safety-p h4 {
+  font-family: light;
+  font-weight: lighter;
+  font-size: 19px;
+}
+.safety-p h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+.map-img img {
+  width: 80%;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+
+.buttons-page5 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 10px;
+  max-width: 400px;
+}
+.buttons-page5 p {
+  font-family: book;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.btn-plus button {
+  background-color: transparent;
+  border-radius: 100%;
+  border: solid 3px black;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 8px;
+  margin-left: 40px;
+  width: 45px;
+}
+.btn-plus button:hover,
+.btn-page5 button:hover {
+  background-color: black;
+  color: #fff;
+  transition: all 0.8s;
+}
+
+.btn-page5 button {
+  border: solid black 3px;
+  margin-right: 30px;
+  background: transparent;
+  font-family: medium;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.side-img-page5 {
+  background-image: url(./img_tesla/red-car-psge5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#info-page5 {
+  max-width: 750px;
+  margin: 35% auto auto 25%;
 }
