@@ -4,16 +4,16 @@
     margin: 0;
 }
 @font-face{
-    src: url(./fonts/Gotham/Gotham\ Medium.otf);
+    src: url(./fonts/medium/Gotham\ Medium.otf);
     font-family: medium;   
 }
 @font-face{
-    src: url(./fonts//Book/Gotham\ Book\ Regular.otf);
+    src: url(./fonts/Book/Gotham\ Book\ Regular.otf);
     font-family: book;
 
 }
 @font-face{
-    src: url(./fonts/FontsFree-Net-Gotham-Light.ttf);
+    src: url(./fonts/Light/Regular/Gotham\ Light\ Regular.otf);
     font-family: light;
 }
 body{
